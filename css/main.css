@@ -1,0 +1,120 @@
+html {
+    height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background: #8cb87e;
+}
+
+/* Recipe card */
+.recipe-box{
+	align:center;
+}
+
+.recipe-card {
+	float: left;
+	padding: 1.2%;
+}
+
+.recipe-card img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+	border-radius: 5px;
+	-webkit-box-shadow: 1px 1px 1px 1px gray;
+	-moz-box-shadow: 1px 1px 1px 1px gray;
+	box-shadow: 1px 1px 1px 1px gray;
+}
+
+.recipe-card:hover img {
+    -webkit-transform:scale(1.03); /* Safari and Chrome */
+    -moz-transform:scale(1.03); /* Firefox */
+    -ms-transform:scale(1.03); /* IE 9 */
+    -o-transform:scale(1.03); /* Opera */
+     transform:scale(1.03);
+}
+
+/* Text */
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 48px;
+	text-align:center;
+	padding-top: 30px;
+	padding-left: 5px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 32px;
+	text-align:center;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+h5 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-align:center;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+/* Recipe Section */
+.recipe-section {
+  background-color: white;
+	border: 2px solid #F5F5F5;
+	border-radius: 3px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	padding: 5px;
+	box-shadow: 2px 2px 2px black;
+}
+
+.content-section {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol > li {
+  margin: 0;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+ol > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
+.ingredients-table {
+  width: 50%;
+}
