@@ -16,34 +16,94 @@ body {
 	background: #8cb87e;
 }
 
-/* Recipe card */
-.recipe-box{
-	align:center;
+/* Button divs */
+.button-div {
+	cursor: pointer;
 }
 
-.recipe-card {
-	float: left;
+/* Recipe card */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+.recipe-box{
+	align-content:center;
+	height: 100%;
+	width: 100%;
+}
+
+.recipe-card-div {
+	display: inline-block;
 	padding: 1.2%;
 }
 
-.recipe-card img {
-    -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* IE 9 */
-    -o-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
-	border-radius: 5px;
-	-webkit-box-shadow: 1px 1px 1px 1px gray;
-	-moz-box-shadow: 1px 1px 1px 1px gray;
-	box-shadow: 1px 1px 1px 1px gray;
+.recipe-card-div-inner {
+	width: 250px;
+	height: 325px;
+	border: 3px solid;
 }
 
-.recipe-card:hover img {
+.recipe-card-top {
+	height: 80%;
+	background-color: white;
+}
+
+.recipe-card-img {
+	width: 100%;
+    height: 100%;
+}
+
+.recipe-card-bot {
+	height: 20%;
+	border-top: 3px solid;
+	text-align: center;
+	background-color: white;
+}
+
+.recipe-card-text {
+	font-size: 22px;
+}
+
+.recipe-card {
+	display: inline-block;
+	padding: 1.2%;
+}
+
+.recipe-card-div-inner {
+    -webkit-transition: all 0.25s ease; /* Safari and Chrome */
+    -moz-transition: all 0.25s ease; /* Firefox */
+    -ms-transition: all 0.25s ease; /* IE 9 */
+    -o-transition: all 0.25s ease; /* Opera */
+    transition: all 0.25s ease;
+}
+
+.recipe-card-div-inner:hover {
     -webkit-transform:scale(1.03); /* Safari and Chrome */
     -moz-transform:scale(1.03); /* Firefox */
     -ms-transform:scale(1.03); /* IE 9 */
     -o-transform:scale(1.03); /* Opera */
-     transform:scale(1.03);
+	transform:scale(1.03);
+	-webkit-box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
+	box-shadow: 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* Text */
@@ -116,5 +176,66 @@ ol > li:before {
 }
 
 .ingredients-table {
-  width: 50%;
+	width: 50%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+/* Mushroom Jerky Section */
+.mj-table-div {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mj-table {
+	background-color: white;
+	table-layout: fixed;
+	border-collapse: collapse;
+	margin: 0 auto;
+    -webkit-box-shadow: 0 0 5px 5px rgb(212, 0, 255);
+    -moz-box-shadow: 0 0 5px 5px rgb(212, 0, 255);
+	box-shadow: 0 0 5px 5px rgb(212, 0, 255);
+	width: 100%;
+}
+
+.mj-thead-tr {
+	margin-bottom: 10px;
+	background-color: green;
+	color: white;
+}
+
+.mj-tbody-tr {
+
+}
+
+.mj-tbody-tr:hover {
+	background-color: orange;
+}
+
+.mj-td1 {
+	padding: 6px;
+	text-align: left;
+	font-size: 20px;
+}
+
+.mj-td2 {
+	padding: 6px;
+	font-size: 20px;
+	word-wrap: break-word;
+	text-align: left;
+}
+
+.mj-rating-icon {
+	height: 25px;
+	width: 25px;
+	display: inline-block;
 }
