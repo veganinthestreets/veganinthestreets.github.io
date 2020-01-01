@@ -237,6 +237,12 @@ a:hover {
 	text-align: left;
 }
 
+.mj-td-right {
+	padding: 6px;
+	font-size: 20px;
+	text-align: right;
+}
+
 .mj-rating-icon {
 	height: 25px;
 	width: 25px;
