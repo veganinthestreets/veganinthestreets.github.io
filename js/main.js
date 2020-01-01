@@ -4,3 +4,7 @@ const goToHome = () => {
         window.location.href = "../index.html";
     }
 };
+
+const goToMushroomJerky = () => {
+    window.location.href = "recipes/mushroom-jerky.html";
+};

@@ -21,6 +21,10 @@ body {
 	cursor: pointer;
 }
 
+.header-padding {
+	padding-left: 25px;
+}
+
 /* Recipe card */
 .clearfix:after {
     content: ".";
@@ -214,7 +218,6 @@ a:hover {
 }
 
 .mj-tbody-tr {
-
 }
 
 .mj-tbody-tr:hover {
@@ -238,4 +241,28 @@ a:hover {
 	height: 25px;
 	width: 25px;
 	display: inline-block;
+}
+
+.tooltip-wrap {
+	position: relative;
+}
+
+.tooltip-wrap .tooltip-content {
+	display: none;
+	position: absolute;
+	max-width: 200px;
+	min-width: 50px;
+	background-color: #fff;
+	padding: .5em;
+	z-index: 1;
+	margin-left: 25px;
+    margin-top: -15px;
+}
+
+.tooltip-wrap:hover .tooltip-content {
+	display: block;
+	border-style: solid;
+	border-width: medium;
+	border-color: #ff00ff;
+	border-radius: 5px;
 }
