@@ -31,7 +31,7 @@
 	</nav>
 
 	<!-- Main Body -->
-	<body>
+	<body onresize="resizeRecipeImage()" onload="resizeRecipeImage()">
 
 		<div class='container'>
 
@@ -45,13 +45,15 @@
 
         <!-- Ingredients -->
         <p class="content-section">Ingredients:</p>
-        <table class="table table-bordered table-hover ingredients-table">
+        <table class="table table-bordered table-hover ingredients-table" id="ingredients-table">
 
-          <col width="40%">
+          <col width="5%">
+          <col witdh="35%">
           <col width="60%">
 
           <thead>
             <tr>
+              <th></th>
               <th>Amount</th>
               <th>Ingredient</th>
             </tr>
@@ -59,18 +61,30 @@
 
           <tbody>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>4 Cups</td>
               <td>Vegetable broth</td>
             </tr>
             <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
                 <td>2 tsp</td>
                 <td>Kelp granules</td>
             </tr>
             <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
                 <td>8 Oz</td>
                 <td>Tofu</td>
             </tr>
             <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
                 <td>2</td>
                 <td>Green onions</td>
             </tr>
@@ -78,13 +92,48 @@
 
         </table>
 
-        <!-- Instruction -->
+        <!-- Recipe Picture -->
+        <div class="recipe-picture-div">
+          <img class="recipe-picture" src="../images/miso-soup.jpg" id="recipe-img">
+        </div>
+
+        <!-- Instructions -->
         <p class="content-section">Instructions:</p>
-        <ol>
-            <li>Combine broth and kelp granules in a saucepan on medium heat until it reaches a boil. While the broth is heating, slice the tofu and green onions into a desired size.</li>
-            <li>Turn the heat down to simmer and mix in the miso paste.</li>
-            <li>Add the tofu and green onions and heat for five minutes.</li>
-        <ol>
+
+        <table class="instructions-table" id="instructions-table">
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">1.</td>
+            <td class="instructions-td">
+              Combine broth and kelp granules in a saucepan on medium heat until it reaches a boil. While the broth is heating, slice the tofu and green onions into a desired size.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">2.</td>
+            <td class="instructions-td">
+              Turn the heat down to simmer and mix in the miso paste.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">3.</td>
+            <td class="instructions-td">
+              Add the tofu and green onions and heat for five minutes.
+            </td>
+          </tr>
+
+        </table>
+
       </div>
 
 		</div>

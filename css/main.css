@@ -180,6 +180,7 @@ ol > li:before {
 }
 
 .ingredients-table {
+	display: inline-block;
 	width: 50%;
 }
 
@@ -270,4 +271,23 @@ a:hover {
 	border-width: medium;
 	border-color: #ff00ff;
 	border-radius: 5px;
+}
+
+.tr-strikethrough {
+	text-decoration: line-through;
+}
+
+.recipe-picture-div {
+	float: right;
+	text-align: center;
+	width: 49%;
+}
+
+/* Instructions Table */
+.instructions-table {
+	widows: 90%;
+}
+
+.instructions-td {
+	padding-left: 10px;
 }

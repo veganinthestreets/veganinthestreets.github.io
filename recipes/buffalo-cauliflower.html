@@ -31,7 +31,7 @@
 	</nav>
 
 	<!-- Main Body -->
-	<body>
+	<body onresize="resizeRecipeImage()" onload="resizeRecipeImage()">
 
 		<div class='container'>
 
@@ -45,13 +45,15 @@
 
         <!-- Ingredients -->
         <p class="content-section">Ingredients:</p>
-        <table class="table table-bordered table-hover ingredients-table">
+        <table class="table table-bordered table-hover ingredients-table"  id="ingredients-table">
 
-          <col width="40%">
+          <col width="5%">
+          <col witdh="35%">
           <col width="60%">
 
           <thead>
             <tr>
+              <th></th>
               <th>Amount</th>
               <th>Ingredient</th>
             </tr>
@@ -59,26 +61,44 @@
 
           <tbody>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>½ Head</td>
               <td>Cauliflower</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>3⁄4 cup</td>
               <td>All-purpose flour</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>1 cup</td>
               <td>Water</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>1 tablespoon</td>
               <td>Garlic powder</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>1 tablespoon</td>
               <td>Vegan butter</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>3⁄4 cup</td>
               <td>Buffalo wing sauce</td>
             </tr>
@@ -86,17 +106,88 @@
 
         </table>
 
+        <!-- Recipe Picture -->
+        <div class="recipe-picture-div">
+          <img class="recipe-picture" src="../images/buffalo-cauliflower.jpg" id="recipe-img">
+        </div>
+
         <!-- Instruction -->
         <p class="content-section">Instructions:</p>
-        <ol>
-          <li>Preheat the oven to 450ºF.</li>
-          <li>Cover a baking sheet with oil.</li>
-          <li>Cut/break cauliflower into bite sized pieces.</li>
-          <li>Mix flour, water and garlic powder in a bowl. Then mix in cauliflower bites.</li>
-          <li>Line baking sheet with covered cauliflower bites and bake for 20 minutes.</li>
-          <li>Heat up butter and mix in a bowl with the buffalo wing sauce.</li>
-          <li>Cover cauliflower bites with hot sauce mixture and bake for an additional 5 minutes.</li>
-        <ol>
+
+        <table class="instructions-table" id="instructions-table">
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">1.</td>
+            <td class="instructions-td">
+              Preheat the oven to <strong>450ºF</strong>.
+            </td>
+          </tr>
+  
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">2.</td>
+            <td class="instructions-td">
+              Cover a baking sheet with oil.
+            </td>
+          </tr>
+  
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">3.</td>
+            <td class="instructions-td">
+              Cut/break cauliflower into bite sized pieces.
+            </td>
+          </tr>
+  
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">4.</td>
+            <td class="instructions-td">
+              Mix flour, water and garlic powder in a bowl. Then mix in cauliflower bites.
+            </td>
+          </tr>
+  
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">5.</td>
+            <td class="instructions-td">
+              Line baking sheet with covered cauliflower bites and bake for <strong>20 minutes</strong>.
+            </td>
+          </tr>
+  
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">6.</td>
+            <td class="instructions-td">
+              Heat up butter and mix in a bowl with the buffalo wing sauce.
+            </td>
+          </tr>
+  
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">7.</td>
+            <td class="instructions-td">
+              Cover cauliflower bites with hot sauce mixture and bake for an additional <strong>5 minutes</strong>.
+            </td>
+          </tr>
+  
+        </table>
+
       </div>
 
 		</div>
