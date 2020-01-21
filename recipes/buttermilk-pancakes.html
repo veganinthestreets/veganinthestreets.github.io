@@ -31,7 +31,7 @@
 	</nav>
 
 	<!-- Main Body -->
-	<body>
+	<body onresize="resizeRecipeImage()" onload="resizeRecipeImage()">
 
 		<div class='container'>
 
@@ -45,13 +45,15 @@
 
         <!-- Ingredients -->
         <p class="content-section">Ingredients:</p>
-        <table class="table table-bordered table-hover ingredients-table">
+        <table class="table table-bordered table-hover ingredients-table" id="ingredients-table">
 
-          <col width="40%">
+          <col width="5%">
+          <col witdh="35%">
           <col width="60%">
 
           <thead>
             <tr>
+              <th></th>
               <th>Amount</th>
               <th>Ingredient</th>
             </tr>
@@ -59,34 +61,58 @@
 
           <tbody>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>¾ cup + 2 tablespoons</td>
               <td>Almond milk</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>1 tablespoon</td>
               <td>Apple cider vinegar</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>1 cup</td>
               <td>All-purpose flour</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>1 tablespoon</td>
               <td>Baking powder</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>Generous pinch</td>
               <td>Salt</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>1 tablespoon</td>
               <td>Cooking oil</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>2 tablespoons</td>
               <td>Maple syrup</td>
             </tr>
             <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>1 teaspoon</td>
               <td>Vanilla extract</td>
             </tr>
@@ -94,13 +120,47 @@
 
         </table>
 
+        <!-- Recipe Picture -->
+        <div class="recipe-picture-div">
+          <img class="recipe-picture" src="../images/buttermilk-pancakes.png" id="recipe-img">
+        </div>
+
         <!-- Instruction -->
         <p class="content-section">Instructions:</p>
-        <ol>
-          <li>In a bowl, combine milk and vinegar. Let sour while you combine other ingredients.</li>
-          <li>In a mixing bowl, combine flour, baking powder, and salt. Stir in oil, maple syrup, vanilla, and sour milk, stirring just until combined. Don't over-stir as this creates tough pancakes.</li>
-          <li>Lightly grease a non-stick pan or griddle and place over medium heat. When hot, add pancake batter flipping after a minute or so, when edges are set and a few bubbles appear at the surface. Makes 6–8 pancakes, depending on how big you make them. Serves 2–3.</li>
-        <ol>
+
+        <table class="instructions-table" id="instructions-table">
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">1.</td>
+            <td class="instructions-td">
+              In a bowl, combine milk and vinegar. Let sour while you combine other ingredients.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">2.</td>
+            <td class="instructions-td">
+              In a mixing bowl, combine flour, baking powder, and salt. Stir in oil, maple syrup, vanilla, and sour milk, stirring just until combined. Don't over-stir as this creates tough pancakes.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">3.</td>
+            <td class="instructions-td">
+              Lightly grease a non-stick pan or griddle and place over medium heat. When hot, add pancake batter flipping after a minute or so, when edges are set and a few bubbles appear at the surface. Makes 6–8 pancakes, depending on how big you make them.
+            </td>
+          </tr>
+
+        </table>
       </div>
 
 		</div>
