@@ -25,10 +25,18 @@ const toggleIngredientRowComplete = (element, tableName='ingredients-table') => 
 
 // Recipe pages, resize the image to fit ingredients table height
 const resizeRecipeImage = (tableName='ingredients-table') => {
-    newHeight = document.getElementById(tableName).offsetHeight;
+    table = document.getElementById(tableName);
+    newHeight = table.offsetHeight;
+    newWidth = table.offsetWidth;
     recipeImage = document.getElementById('recipe-img');
 
-    recipeImage.style.height = `${newHeight}px`;
+    if (newHeight - newWidth > 75) {
+        recipeImage.style.display = "none";
+    } else {
+        recipeImage.style.display = "inline";
+        recipeImage.style.height = `${newHeight}px`;
+        recipeImage.style.width = `${newWidth - 100}px`;
+    }
 };
 
 // Instructions table check boxes
