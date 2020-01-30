@@ -23,6 +23,27 @@ const toggleIngredientRowComplete = (element, tableName='ingredients-table') => 
     };
 };
 
+// Get full width and height of the document
+const getWidth = () => {
+    return Math.max(
+        document.body.scrollWidth,
+        document.documentElement.scrollWidth,
+        document.body.offsetWidth,
+        document.documentElement.offsetWidth,
+        document.documentElement.clientWidth
+      );
+};
+
+const getHeight = () => {
+    return Math.max(
+        document.body.scrollHeight,
+        document.documentElement.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.offsetHeight,
+        document.documentElement.clientHeight
+      );
+};
+
 // Recipe pages, resize the image to fit ingredients table height
 const resizeRecipeImage = (tableName='ingredients-table') => {
     table = document.getElementById(tableName);
@@ -30,13 +51,16 @@ const resizeRecipeImage = (tableName='ingredients-table') => {
     newWidth = table.offsetWidth;
     recipeImage = document.getElementById('recipe-img');
 
-    if (newHeight - newWidth > 75) {
+    if (getWidth() < 700) {
+        table.style.width = "auto"
         recipeImage.style.display = "none";
     } else {
+        table.style.width = "50%"
         recipeImage.style.display = "inline";
         recipeImage.style.height = `${newHeight}px`;
         recipeImage.style.width = `${newWidth - 100}px`;
     }
+
 };
 
 // Instructions table check boxes

@@ -182,6 +182,7 @@ ol > li:before {
 .ingredients-table {
 	display: inline-block;
 	width: 50%;
+	table-layout: fixed;
 }
 
 a {
@@ -281,6 +282,10 @@ a:hover {
 	float: right;
 	text-align: center;
 	width: 49%;
+}
+
+#recipe-img {
+	display: none;
 }
 
 /* Instructions Table */
