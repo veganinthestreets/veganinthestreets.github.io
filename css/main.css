@@ -285,7 +285,7 @@ a:hover {
 
 /* Instructions Table */
 .instructions-table {
-	widows: 90%;
+	width: 100%;
 }
 
 .instructions-td {
