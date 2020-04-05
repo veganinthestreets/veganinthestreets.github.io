@@ -1,12 +1,12 @@
 const goToHome = () => {
     let path = window.location.href.split('/');
     if (path[path.length - 1] !== 'index.html') {
-        window.location.href = "../index.html";
+        window.location.href = "../../index.html";
     }
 };
 
 const goToMushroomJerky = () => {
-    window.location.href = "recipes/mushroom-jerky.html";
+    window.location.href = "pages/other/mushroom-jerky.html";
 };
 
 // Ingredients table check boxes
@@ -42,25 +42,6 @@ const getHeight = () => {
         document.documentElement.offsetHeight,
         document.documentElement.clientHeight
       );
-};
-
-// Recipe pages, resize the image to fit ingredients table height
-const resizeRecipeImage = (tableName='ingredients-table') => {
-    table = document.getElementById(tableName);
-    newHeight = table.offsetHeight;
-    newWidth = table.offsetWidth;
-    recipeImage = document.getElementById('recipe-img');
-
-    if (getWidth() < 700) {
-        table.style.width = "auto"
-        recipeImage.style.display = "none";
-    } else {
-        table.style.width = "50%"
-        recipeImage.style.display = "inline";
-        recipeImage.style.height = `${newHeight}px`;
-        recipeImage.style.width = `${newWidth - 100}px`;
-    }
-
 };
 
 // Instructions table check boxes
