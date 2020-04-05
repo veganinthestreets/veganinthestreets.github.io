@@ -151,6 +151,8 @@ p {
 	margin-bottom: 5px;
 	padding: 5px;
 	box-shadow: 2px 2px 2px black;
+	margin: auto;
+	max-width: 600px;
 }
 
 .content-section {
@@ -180,9 +182,7 @@ ol > li:before {
 }
 
 .ingredients-table {
-	display: inline-block;
-	width: 50%;
-	table-layout: fixed;
+	width: auto;
 }
 
 a {
@@ -295,4 +295,69 @@ a:hover {
 
 .instructions-td {
 	padding-left: 10px;
+}
+
+/* Die Up Powerups */
+.die-powerup-gen-button {
+	background-color: grey;
+	border: none;
+	color: white;
+	padding: 15px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: auto;
+	cursor: pointer;
+	font-size: 24px;
+	border-radius: 4px;
+}
+
+.die-powerup-gen-button:hover {
+	background-color: darkgray;
+}
+
+.die-powerup-gen-button:active {
+	background-color: darkgray;
+	transform: translateY(4px);
+}
+
+.die-powerup-gen-button:focus {
+	outline:0;
+}
+
+.die-powerup-table {
+	margin: auto;
+	background: white;
+}
+
+.die-powerup-thead-tr {
+	background: grey;
+	color: white;
+}
+
+.die-powerup-tr {
+	border: 1px solid;
+	border-collapse: true;
+}
+
+.die-powerup-tr:hover {
+	background: lightgrey;
+}
+
+.die-powerup-td {
+	padding: 6px;
+	text-align: left;
+	font-size: 20px;
+	border: 1px solid lightgray;
+	border-collapse: true;
+}
+
+.die-powerup-positive {
+	background: green;
+	color: white;
+}
+
+.die-powerup-negative {
+	background: red;
+	color: white;
 }
