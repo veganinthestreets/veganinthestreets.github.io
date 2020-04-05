@@ -55,10 +55,12 @@ const shuffle = (array) => {
 
 const buildRandomPowerupsTable = () => {
 
-    table = document.getElementById('die-powerup-table');
+    let table = document.getElementById('die-powerup-table');
     table.innerHTML = "";
-
     table.setAttribute('class', 'die-powerup-table');
+
+    let diePowerUpSection = document.getElementById('die-powerup-section');
+    diePowerUpSection.setAttribute('class', 'die-powerup-section');
 
     const randomPowerUpIds = shuffle(Object.keys(powerUps));
 
