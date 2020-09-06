@@ -8,9 +8,9 @@
 		<meta name="viewport" content="width = device-width, initial-scale = 1">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main.css">
 		<title>White Wine Pasta</title>
-		<link rel="icon" href="../images/plant-thumb.png">
+		<link rel="icon" href="../../images/plant-thumb.png">
 	</head>
 
 	<!-- Navbar -->
@@ -45,13 +45,15 @@
 
         <!-- Ingredients -->
         <p class="content-section">Ingredients:</p>
-        <table class="table table-bordered table-hover ingredients-table">
+        <table class="table table-bordered table-hover ingredients-table" id="ingredients-table">
 
-          <col width="40%">
+          <col width="5%">
+          <col witdh="35%">
           <col width="60%">
 
           <thead>
             <tr>
+              <th></th>
               <th>Amount</th>
               <th>Ingredient</th>
             </tr>
@@ -59,44 +61,151 @@
 
           <tbody>
             <tr>
-              <td>½ Head</td>
-              <td>Cauliflower</td>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>16 ounces</td>
+              <td>Brussels sprouts</td>
             </tr>
             <tr>
-              <td>3⁄4 cup</td>
-              <td>All-purpose flour</td>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>3 tablespoons</td>
+              <td>Olive oil or butter</td>
             </tr>
             <tr>
-              <td>1 cup</td>
-              <td>Water</td>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>4 large cloves</td>
+              <td>Garlic, chopped</td>
             </tr>
             <tr>
-              <td>1 tablespoon</td>
-              <td>Garlic powder</td>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1/3 cup</td>
+              <td>Dry white wine</td>
             </tr>
             <tr>
-              <td>1 tablespoon</td>
-              <td>Vegan butter</td>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>4 tablespoons</td>
+              <td>Flour</td>
             </tr>
             <tr>
-              <td>3⁄4 cup</td>
-              <td>Buffalo wing sauce</td>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1 3⁄4 cup</td>
+              <td>Unsweetened almond milk</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>4 tablespoons</td>
+              <td>Nutritional yeast</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1/4 cup</td>
+              <td>Vegan parmesan cheese</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>10 ounces</td>
+              <td>Pasta</td>
             </tr>
           </tbody>
-
+  
         </table>
 
         <!-- Instruction -->
         <p class="content-section">Instructions:</p>
-        <ol>
-          <li>Preheat the oven to 450ºF.</li>
-          <li>Cover a baking sheet with oil.</li>
-          <li>Cut/break cauliflower into bite sized pieces.</li>
-          <li>Mix flour, water and garlic powder in a bowl. Then mix in cauliflower bites.</li>
-          <li>Line baking sheet with covered cauliflower bites and bake for 20 minutes.</li>
-          <li>Heat up butter and mix in a bowl with the buffalo wing sauce.</li>
-          <li>Cover cauliflower bites with hot sauce mixture and bake for an additional 5 minutes.</li>
-        <ol>
+
+        <table class="instructions-table" id="instructions-table">
+
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">1.</td>
+            <td class="instructions-td">
+              Preheat the oven to 400ºF and add Brussels sprouts to a bakings sheet. Drizzle with oil, season with salt and pepper and set aside.
+            </td>
+          </tr>
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">2.</td>
+            <td class="instructions-td">
+              Bring a large pot of water to a boil and add salt.
+            </td>
+          </tr>
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">3.</td>
+            <td class="instructions-td">
+              Heat a large rimmed skillet over medium heat. Once hot, add oil and garlic. Sauté for 3 minutes or until fragrant and very slightly golden brown. Add wine and sauté for 2-4 minutes, or until wine has reduced by about half.
+            </td>
+          </tr>
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">4.</td>
+            <td class="instructions-td">
+              Add flour and whisk, then add almond milk and whisk. It will be very clumpy, this is normal. Transfer to a blender and add nutritional yeast, salt, pepper, and vegan parmesan cheese. Blend on high until smooth and creamy.
+            </td>
+          </tr>
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">5.</td>
+            <td class="instructions-td">
+              Transfer sauce back to skillet and wark over medium-low heat until bubbly while whisking. The sauce should thicken, at which point you can lower the heat to a simmer until the pasta is cooked. If the sauce is too thick, add almond milk. If the sauce is too thin, increase heat to encourage thickening.
+            </td>
+          </tr>
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">6.</td>
+            <td class="instructions-td">
+              Add Brussels sprouts to the oven and cook for 12-15 minutes.
+            </td>
+          </tr>
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">7.</td>
+            <td class="instructions-td">
+              Once the pasta is cooked and drained, add it directly to the sauce along with half of the Brussels sprouts.
+            </td>
+          </tr>
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">8.</td>
+            <td class="instructions-td">
+              Serve with remaining Brussels sprouts and vegan parmesan cheese.
+            </td>
+          </tr>
+
+        </table>
       </div>
 
 		</div>
