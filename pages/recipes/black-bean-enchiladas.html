@@ -8,9 +8,9 @@
 		<meta name="viewport" content="width = device-width, initial-scale = 1">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main.css">
 		<title>Black Bean Enchiladas</title>
-		<link rel="icon" href="../images/plant-thumb.png">
+		<link rel="icon" href="../../images/plant-thumb.png">
 	</head>
 
 	<!-- Navbar -->
@@ -18,12 +18,12 @@
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
         <div class="navbar-brand button-div" onclick="goToHome();">Home <span class="glyphicon glyphicon-home"></span></div>
 	    </div>
 	    </div><!-- /.navbar-collapse -->
@@ -45,13 +45,15 @@
 
         <!-- Ingredients -->
         <p class="content-section">Ingredients:</p>
-        <table class="table table-bordered table-hover ingredients-table">
+        <table class="table table-bordered table-hover ingredients-table" id="ingredients-table">
 
-          <col width="40%">
+          <col width="5%">
+          <col witdh="35%">
           <col width="60%">
 
           <thead>
             <tr>
+              <th></th>
               <th>Amount</th>
               <th>Ingredient</th>
             </tr>
@@ -59,28 +61,88 @@
 
           <tbody>
             <tr>
-              <td>½ Head</td>
-              <td>Cauliflower</td>
-            </tr>
-            <tr>
-              <td>3⁄4 cup</td>
-              <td>All-purpose flour</td>
-            </tr>
-            <tr>
-              <td>1 cup</td>
-              <td>Water</td>
-            </tr>
-            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
               <td>1 tablespoon</td>
-              <td>Garlic powder</td>
+              <td>Oil</td>
             </tr>
             <tr>
-              <td>1 tablespoon</td>
-              <td>Vegan butter</td>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1</td>
+              <td>Onion, chopped</td>
             </tr>
             <tr>
-              <td>3⁄4 cup</td>
-              <td>Buffalo wing sauce</td>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>2 cloves</td>
+              <td>Garlic, minced</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>3 tablespoons</td>
+              <td>Chili Powder</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>2 teaspoons</td>
+              <td>Cumin</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>2 cups</td>
+                <td>Black Beans</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1 teaspoon</td>
+              <td>Salt</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>2 cups</td>
+              <td>Tomato puree or 1 can 15 oz tomato sauce + ½ cup water</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>½ cup + 1 tbs</td>
+              <td>Chopped fresh cilantro</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1</td>
+              <td>Medium jalapeño, chopped</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>8 oz</td>
+              <td>Vegan cheese</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>12-14</td>
+              <td>5.5 inch tortillas</td>
             </tr>
           </tbody>
 
@@ -88,21 +150,86 @@
 
         <!-- Instruction -->
         <p class="content-section">Instructions:</p>
-        <ol>
-          <li>Preheat the oven to 450ºF.</li>
-          <li>Cover a baking sheet with oil.</li>
-          <li>Cut/break cauliflower into bite sized pieces.</li>
-          <li>Mix flour, water and garlic powder in a bowl. Then mix in cauliflower bites.</li>
-          <li>Line baking sheet with covered cauliflower bites and bake for 20 minutes.</li>
-          <li>Heat up butter and mix in a bowl with the buffalo wing sauce.</li>
-          <li>Cover cauliflower bites with hot sauce mixture and bake for an additional 5 minutes.</li>
-        <ol>
+
+        <table class="instructions-table" id="instructions-table">
+
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">1.</td>
+            <td class="instructions-td">
+              Heat oil in a saute pan over medium heat. Add onion and garlic to cook until soft and fragrant, about 3 minutes. Add the chili powder, cumin powder, and salt. Cook another 2 minutes. Add the beans and tomato puree and bring to a boil. Turn the heat to low and simmer 5 minutes.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">2.</td>
+            <td class="instructions-td">
+              Remove the bean mixture from the heat and strain, reserving the sauce. Transfer the strained bean mixture to a medium bowl and mix together with ½ cup cilantro, jalapenos, and 4 oz of cheese.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">3.</td>
+            <td class="instructions-td">
+              Preheat oven to 350 °F.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">4.</td>
+            <td class="instructions-td">
+              Spread ½ cup of the sauce in the bottom of the baking dish. Microwave 5 tortillas at a time or follow the package instructions to soften. Scoop about ¼ cup bean mixture into each tortilla and roll it up tightly. Place the filled and rolled tortillas in the baking dish seam-side down. Finish all tortillas.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">5.</td>
+            <td class="instructions-td">
+              Dip the pastry brush in the sauce and brush the ends of each tortilla. Pour the remaining sauce evenly over the enchiladas.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">6.</td>
+            <td class="instructions-td">
+              Sprinkle the remaining cheese over the top of the enchiladas, cover the baking dish with aluminum foil. Bake for 20 minutes. Remove the foil, bake for additional 2-3 minutes until the cheese is slightly brown.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="checkbox-td">
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">7.</td>
+            <td class="instructions-td">
+              Garnish with the remaining cilantro before serving.
+            </td>
+          </tr>
+
+        </table>
       </div>
 
 		</div>
 
-  </body>
-  
-  <script src="../js/main.js"></script>
+	</body>
+
+  <script src="../../js/main.js"></script>
 
 </html>

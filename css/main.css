@@ -295,6 +295,12 @@ a:hover {
 
 .instructions-td {
 	padding-left: 10px;
+	vertical-align: top;
+}
+
+/* Check Box */
+.checkbox-td {
+	vertical-align: top;
 }
 
 /* Die Up Powerups */

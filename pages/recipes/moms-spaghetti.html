@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="../../css/main.css">
-		<title>Buffalo Cauliflower</title>
+		<title>Mom's Spaghetti</title>
 		<link rel="icon" href="../../images/plant-thumb.png">
 	</head>
 
@@ -18,12 +18,12 @@
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
         <div class="navbar-brand button-div" onclick="goToHome();">Home <span class="glyphicon glyphicon-home"></span></div>
 	    </div>
 	    </div><!-- /.navbar-collapse -->
@@ -37,7 +37,7 @@
 
 			<!-- Title -->
 			<div class="page-header">
-				<h1>Buffalo Cauliflower</h1>
+				<h1>Mom's Spaghetti</h1>
 			</div>
 
       <!-- Recipe contents -->
@@ -45,7 +45,7 @@
 
         <!-- Ingredients -->
         <p class="content-section">Ingredients:</p>
-        <table class="table table-bordered table-hover ingredients-table"  id="ingredients-table">
+        <table class="table table-bordered table-hover ingredients-table" id="ingredients-table">
 
           <col width="5%">
           <col witdh="35%">
@@ -64,44 +64,87 @@
               <td>
                 <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
               </td>
-              <td>½ Head</td>
-              <td>Cauliflower</td>
+              <td>1⁄3 cup</td>
+              <td>Oil</td>
             </tr>
             <tr>
               <td>
                 <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
               </td>
-              <td>3⁄4 cup</td>
-              <td>All-purpose flour</td>
+              <td>1 lb</td>
+              <td>Vegan ground beef</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1 lb</td>
+              <td>Vegan Italian sausage (whole sausages or ground)</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1</td>
+              <td>Onion, chopped</td>
             </tr>
             <tr>
               <td>
                 <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
               </td>
               <td>1 cup</td>
-              <td>Water</td>
+              <td>Mushrooms, sliced (optional)</td>
             </tr>
             <tr>
-              <td>
-                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
-              </td>
-              <td>1 tablespoon</td>
-              <td>Garlic powder</td>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>2 15 oz cans</td>
+                <td>Tomato sauce</td>
             </tr>
             <tr>
-              <td>
-                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
-              </td>
-              <td>1 tablespoon</td>
-              <td>Vegan butter</td>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>2 15 oz cans</td>
+                <td>Diced or stewed tomatoes</td>
             </tr>
             <tr>
-              <td>
-                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
-              </td>
-              <td>3⁄4 cup</td>
-              <td>Buffalo wing sauce</td>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>2 tablespoons</td>
+                <td>Italian seasoning</td>
             </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>1 tablespoon</td>
+                <td>Oregano</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>1 tablespoon</td>
+                <td>Basil</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>1 teaspoon</td>
+                <td>Salt</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>1⁄2 teaspoon</td>
+                <td>Pepper</td>
+            </tr>
+
           </tbody>
 
         </table>
@@ -117,78 +160,66 @@
             </td>
             <td class="instructions-td" style="font-weight: bold;">1.</td>
             <td class="instructions-td">
-              Preheat the oven to <strong>450ºF</strong>.
+              Sauté onions in oil for about 3 minutes.
             </td>
           </tr>
-  
+
           <tr>
             <td class="checkbox-td">
               <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
             </td>
             <td class="instructions-td" style="font-weight: bold;">2.</td>
             <td class="instructions-td">
-              Cover a baking sheet with oil.
+              Add ground "beef" and 2-3 whole sausages ground up*, cook until brown.
             </td>
           </tr>
-  
+
           <tr>
             <td class="checkbox-td">
               <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
             </td>
             <td class="instructions-td" style="font-weight: bold;">3.</td>
             <td class="instructions-td">
-              Cut/break cauliflower into bite sized pieces.
+              Add tomato sauce and diced tomatoes. Fill an empty sauce can about 2/3 full withwater and swish until the can sides are clean. Add the fluid into the next one and repeat the swishing of all four cans then pour into sauce.
             </td>
           </tr>
-  
+
           <tr>
             <td class="checkbox-td">
               <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
             </td>
             <td class="instructions-td" style="font-weight: bold;">4.</td>
             <td class="instructions-td">
-              Mix flour, water and garlic powder in a bowl. Then mix in cauliflower bites.
+              Add all spices and simmer for about 10 minutes.
             </td>
           </tr>
-  
+
           <tr>
             <td class="checkbox-td">
               <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
             </td>
             <td class="instructions-td" style="font-weight: bold;">5.</td>
             <td class="instructions-td">
-              Line baking sheet with covered cauliflower bites and bake for <strong>20 minutes</strong>.
+              Add mushrooms and extra whole sausages* and simmer for 20 minutes. Optional: after done simmering, use hand blender 30-40 seconds for a smoother sauce consistency.
             </td>
           </tr>
-  
-          <tr>
-            <td class="checkbox-td">
-              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
-            </td>
-            <td class="instructions-td" style="font-weight: bold;">6.</td>
-            <td class="instructions-td">
-              Heat up butter and mix in a bowl with the buffalo wing sauce.
-            </td>
-          </tr>
-  
-          <tr>
-            <td class="checkbox-td">
-              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
-            </td>
-            <td class="instructions-td" style="font-weight: bold;">7.</td>
-            <td class="instructions-td">
-              Cover cauliflower bites with hot sauce mixture and bake for an additional <strong>5 minutes</strong>.
-            </td>
-          </tr>
-  
-        </table>
 
+          <tr>
+            <td>
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">*</td>
+            <td class="instructions-td">
+              I use whole sausage rather than make meatballs. Half are ground into the sauce the others are tossed in and cooked whole later on. If you start with a pound of ground Italian sausage then it all goes in at the beginning with the Beyond Beef.
+            </td>
+          </tr>
+
+        </table>
       </div>
 
 		</div>
 
-  </body>
-  
+	</body>
+
   <script src="../../js/main.js"></script>
 
 </html>

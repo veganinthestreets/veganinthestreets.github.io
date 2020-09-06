@@ -9,7 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="../../css/main.css">
-		<title>Buffalo Cauliflower</title>
+		<title>Chili</title>
 		<link rel="icon" href="../../images/plant-thumb.png">
 	</head>
 
@@ -18,12 +18,12 @@
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
         <div class="navbar-brand button-div" onclick="goToHome();">Home <span class="glyphicon glyphicon-home"></span></div>
 	    </div>
 	    </div><!-- /.navbar-collapse -->
@@ -37,7 +37,7 @@
 
 			<!-- Title -->
 			<div class="page-header">
-				<h1>Buffalo Cauliflower</h1>
+				<h1>Chili</h1>
 			</div>
 
       <!-- Recipe contents -->
@@ -45,7 +45,7 @@
 
         <!-- Ingredients -->
         <p class="content-section">Ingredients:</p>
-        <table class="table table-bordered table-hover ingredients-table"  id="ingredients-table">
+        <table class="table table-bordered table-hover ingredients-table" id="ingredients-table">
 
           <col width="5%">
           <col witdh="35%">
@@ -64,44 +64,94 @@
               <td>
                 <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
               </td>
-              <td>½ Head</td>
-              <td>Cauliflower</td>
+              <td>4 Cans</td>
+              <td>Beans</td>
             </tr>
             <tr>
               <td>
                 <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
               </td>
-              <td>3⁄4 cup</td>
-              <td>All-purpose flour</td>
+              <td>1⁄2</td>
+              <td>Orange</td>
             </tr>
             <tr>
               <td>
                 <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
               </td>
-              <td>1 cup</td>
-              <td>Water</td>
+              <td>3 Cloves</td>
+              <td>Garlic</td>
             </tr>
             <tr>
               <td>
                 <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
               </td>
-              <td>1 tablespoon</td>
-              <td>Garlic powder</td>
+              <td>1</td>
+              <td>Onion</td>
             </tr>
             <tr>
               <td>
                 <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
               </td>
-              <td>1 tablespoon</td>
-              <td>Vegan butter</td>
+              <td>1-2</td>
+              <td>Soyrizo</td>
             </tr>
             <tr>
-              <td>
-                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
-              </td>
-              <td>3⁄4 cup</td>
-              <td>Buffalo wing sauce</td>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>1 large can</td>
+                <td>Diced tomatoes</td>
             </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>1 bottle or can</td>
+                <td>Beer</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>1 can</td>
+                <td>Corn (optional)</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>To taste</td>
+                <td>Soy sauce</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>To taste</td>
+                <td>Cumin</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>To taste</td>
+                <td>Chili powder</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>To taste</td>
+                <td>Hot sauce</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>To taste</td>
+                <td>Salt & pepper</td>
+            </tr>
+
           </tbody>
 
         </table>
@@ -117,78 +167,67 @@
             </td>
             <td class="instructions-td" style="font-weight: bold;">1.</td>
             <td class="instructions-td">
-              Preheat the oven to <strong>450ºF</strong>.
+              Sauté onions in olive oil in large pot until clear.
             </td>
           </tr>
-  
+
           <tr>
             <td class="checkbox-td">
               <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
             </td>
             <td class="instructions-td" style="font-weight: bold;">2.</td>
             <td class="instructions-td">
-              Cover a baking sheet with oil.
+              Add garlic and continue cooking for 3 minutes.
             </td>
           </tr>
-  
+
           <tr>
             <td class="checkbox-td">
               <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
             </td>
             <td class="instructions-td" style="font-weight: bold;">3.</td>
             <td class="instructions-td">
-              Cut/break cauliflower into bite sized pieces.
+              Add soyrizo and cook for 3 more minutes.
             </td>
           </tr>
-  
+
           <tr>
             <td class="checkbox-td">
               <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
             </td>
             <td class="instructions-td" style="font-weight: bold;">4.</td>
             <td class="instructions-td">
-              Mix flour, water and garlic powder in a bowl. Then mix in cauliflower bites.
+              Add tomatoes, drained beans, beer, orange juice, corn, and stock of water so liquid is about 1 inch above ingredients.
             </td>
           </tr>
-  
+
           <tr>
             <td class="checkbox-td">
               <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
             </td>
             <td class="instructions-td" style="font-weight: bold;">5.</td>
             <td class="instructions-td">
-              Line baking sheet with covered cauliflower bites and bake for <strong>20 minutes</strong>.
+              Boil on low until right consistency, about 40 minutes.
             </td>
           </tr>
-  
+
           <tr>
             <td class="checkbox-td">
               <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
             </td>
             <td class="instructions-td" style="font-weight: bold;">6.</td>
             <td class="instructions-td">
-              Heat up butter and mix in a bowl with the buffalo wing sauce.
+              Add spices to taste and serve.
             </td>
           </tr>
-  
-          <tr>
-            <td class="checkbox-td">
-              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
-            </td>
-            <td class="instructions-td" style="font-weight: bold;">7.</td>
-            <td class="instructions-td">
-              Cover cauliflower bites with hot sauce mixture and bake for an additional <strong>5 minutes</strong>.
-            </td>
-          </tr>
-  
-        </table>
 
+        </table>
       </div>
 
 		</div>
 
-  </body>
-  
+	</body>
+
   <script src="../../js/main.js"></script>
 
 </html>
