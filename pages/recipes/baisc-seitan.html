@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<!-- Header -->
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="../../css/main.css">
+		<title>Basic Seitan</title>
+		<link rel="icon" href="../../images/plant-thumb.png">
+	</head>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+        <div class="navbar-brand button-div" onclick="goToHome();">Home <span class="glyphicon glyphicon-home"></span></div>
+	    </div>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- Main Body -->
+	<body>
+
+		<div class='container'>
+
+			<!-- Title -->
+			<div class="page-header">
+				<h1>Basic Seitan</h1>
+			</div>
+
+      <!-- Recipe contents -->
+      <div class="recipe-section">
+
+        <!-- Ingredients -->
+        <p class="content-section">Ingredients:</p>
+        <table class="table table-bordered table-hover ingredients-table" id="ingredients-table">
+
+          <col width="5%">
+          <col witdh="35%">
+          <col width="60%">
+
+          <thead>
+            <tr>
+              <th></th>
+              <th>Amount</th>
+              <th>Ingredient</th>
+            </tr>
+          <thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1 cup</td>
+              <td>Vital wheat gluten</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>3 tablespoos</td>
+              <td>Nutritional yeast</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>1⁄2 cup</td>
+              <td>Vegetable broth</td>
+            </tr>
+            <tr>
+              <td>
+                <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+              </td>
+              <td>¼ cup</td>
+              <td>Soy sauce</td>
+            </tr>
+            <tr>
+                <td>
+                  <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
+                </td>
+                <td>1 tablespoon</td>
+                <td>Olive oil</td>
+              </tr>
+          </tbody>
+
+        </table>
+
+        <!-- Instruction -->
+        <p class="content-section">Instructions:</p>
+
+        <table class="instructions-table" id="instructions-table">
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">1.</td>
+            <td class="instructions-td">
+              In a bowl, combine all ingredients.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">2.</td>
+            <td class="instructions-td">
+              Roll out the dough as thin as you can and slice into desired portions.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="checkbox" onclick="toggleInstructionsRowComplete(this)">
+            </td>
+            <td class="instructions-td" style="font-weight: bold;">2.</td>
+            <td class="instructions-td">
+              Over the stove, cook in a pan over medium heat.
+            </td>
+          </tr>
+
+        </table>
+      </div>
+
+		</div>
+
+	</body>
+
+  <script src="../../js/main.js"></script>
+
+</html>
