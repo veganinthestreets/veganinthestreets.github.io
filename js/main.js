@@ -5,10 +5,6 @@ const goToHome = () => {
     }
 };
 
-const goToMushroomJerky = () => {
-    window.location.href = "pages/other/mushroom-jerky.html";
-};
-
 // Ingredients table check boxes
 const toggleIngredientRowComplete = (element, tableName='ingredients-table') => {
     const rowIndex = element.parentNode.parentNode.rowIndex;
