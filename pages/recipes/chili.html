@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 	<!-- Header -->
@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width = device-width, initial-scale = 1">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="../../css/main.css">
 		<title>Chili</title>
 		<link rel="icon" href="../../images/plant-thumb.png">
@@ -36,9 +36,17 @@
 		<div class='container'>
 
 			<!-- Title -->
-			<div class="page-header">
-				<h1>Chili</h1>
-			</div>
+			<div class="page-header recipe-header">
+                <div class="recipe-header-text">
+                    <h1>Chili</h1>
+                    <div class="recipe-meta">
+                        <span>Prep: 55 min</span>
+                        <span>Bake: 0 min</span>
+                        <span>Total: 55 min</span>
+                    </div>
+                </div>
+                <img class="recipe-thumb" src="../../images/chili.jpg" alt="Chili">
+            </div>
 
       <!-- Recipe contents -->
       <div class="recipe-section">
@@ -71,7 +79,7 @@
               <td>
                 <input type="checkbox" onclick="toggleIngredientRowComplete(this)">
               </td>
-              <td>1⁄2</td>
+              <td>1/2</td>
               <td>Orange</td>
             </tr>
             <tr>
@@ -177,7 +185,7 @@
             </td>
             <td class="instructions-td" style="font-weight: bold;">2.</td>
             <td class="instructions-td">
-              Add garlic and continue cooking for 3 minutes.
+              Add garlic and continue cooking for <strong>3 minutes</strong>.
             </td>
           </tr>
 
@@ -207,7 +215,7 @@
             </td>
             <td class="instructions-td" style="font-weight: bold;">5.</td>
             <td class="instructions-td">
-              Boil on low until right consistency, about 40 minutes.
+              Boil on low until right consistency, about <strong>40 minutes</strong>.
             </td>
           </tr>
 
@@ -231,3 +239,15 @@
   <script src="../../js/main.js"></script>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
